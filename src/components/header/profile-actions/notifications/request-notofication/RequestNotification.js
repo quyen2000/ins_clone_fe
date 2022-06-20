@@ -84,12 +84,12 @@ class RequestNotification extends Component {
                                     <span
                                         className={'dropdown-observe already'}
                                         onClick={() => this.declineRequest(followRequest.id)}>
-                                        Usuń
+                                        Xoá
                                     </span>
                                     <span
                                         className={'dropdown-observe'}
                                         onClick={() => this.acceptRequest(followRequest.id)}>
-                                        Potwierdź
+                                        Xác nhận
                                     </span>
                                 </div>}
                         </div>
