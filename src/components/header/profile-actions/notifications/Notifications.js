@@ -62,8 +62,8 @@ class Notifications extends Component {
                             <TimeAgo date={observeItem.creationDateTime} formatter={formatter}/>
                         </span>
                         {observeItem.observed
-                            ? <span className="dropdown-observe already">Obserwowanie</span>
-                            : <span className="dropdown-observe">Obserwuj</span>}
+                            ? <span className="dropdown-observe already">Xem</span>
+                            : <span className="dropdown-observe">Theo dõi</span>}
                     </Link>
                 </div>
             ))
