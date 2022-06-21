@@ -19,7 +19,7 @@ class ProfileActions extends Component {
                     <Notifications />
                 </div>
                 <li className="nav-item">
-                    <Link to={'/user/' + user.username}>
+                    <Link to={'/user/me'}>
                         <i className="nav-icon far fa-user"></i>
                     </Link>
                 </li>
