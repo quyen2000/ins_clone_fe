@@ -80,23 +80,23 @@ class ProfileHeader extends Component {
                                 {userSummary.username}
                                 {userSummary.id === this.props.user.id
                                     ? <Link to="/accounts/edit/">
-                                            <span className="profile-observed">Edytuj profil</span>
+                                            <span className="profile-observed">Chỉnh sửa trang cá nhân</span>
                                         </Link>
                                     : [!this.state.followed
                                             ? (this.props.userObject.private && this.state.requestSent
                                                 ? <span
                                                         onClick={() => this.followUserFunc(userSummary.id)}
-                                                        className="profile-observed">Wyslano zaproszenie</span>
+                                                        className="profile-observed">Lời mời đã được gửi</span>
                                                 : <span
                                                     onClick={() => this.followUserFunc(userSummary.id)}
-                                                    className="profile-observe">Obserwuj</span>)
+                                                    className="profile-observe">Người theo dõi</span>)
                                             : <span
                                                 onClick={() => this.followUserFunc(userSummary.id)}
-                                                className="profile-observed">Obserwowanie</span>]
+                                                className="profile-observed">Đang theo dõi</span>]
 }
 
                             </p>
-                            <p className="profile-post-count">Posty:
+                            <p className="profile-post-count">Bài viết:
                                 <span className="bold count">{postCount}</span>
                             </p>
                             <p className="profile-followers-count">
@@ -105,8 +105,8 @@ class ProfileHeader extends Component {
                                     data-target="#profileFollowersModal"
                                     className="bold count">{this.state.followers}
                                 </span>
-                                obserwujących</p>
-                            <p className="profile-following-count">Obserwowani:
+                                Người theo dõi</p>
+                            <p className="profile-following-count">Đang theo dõi:
                                 <span
                                     data-toggle="modal"
                                     data-target="#profileFollowingModal"
@@ -126,7 +126,7 @@ class ProfileHeader extends Component {
                 <div className="small-profile-numbers">
                     <div className="row text-center">
                         <div className="col-4">
-                            Posty:
+                            Bài viết:
                             <br/>
                             <span className="bold">{postCount}</span>
                         </div>
@@ -136,10 +136,10 @@ class ProfileHeader extends Component {
                                 data-target="#profileFollowersModal"
                                 className="bold count">{this.state.followers}
                             </span><br/>
-                            obserwujących
+                            Người theo dõi
                         </div>
                         <div className="col-4">
-                            Obserwowani:
+                            Đang theo dõi:
                             <br/>
                             <span
                                 data-toggle="modal"

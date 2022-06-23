@@ -39,7 +39,7 @@ class ProfileSavedPhotos extends Component {
         } else {
             return (
                 <div className="no-posts">
-                    Uzytkownikow nie zapisał jescze zadnego posta.
+                    Chưa có bài viết.
                 </div>
             )
         }

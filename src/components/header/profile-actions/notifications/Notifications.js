@@ -139,8 +139,8 @@ class Notifications extends Component {
                                                     : <span className="observe-requests">+10</span>
 }
                                                 <div className="profile-details">
-                                                    <p className="profile-username">Prosby o zezwolenie na obserwowanie</p>
-                                                    <p className="profile-name">Zatwierdz lub zignoruj prośby</p>
+                                                    <p className="profile-username">Yêu cầu theo dõi</p>
+                                                    <p className="profile-name">Phê duyệt hoặc bỏ qua các yêu cầu</p>
                                                 </div>
                                                 <i className="fas fa-angle-right"></i>
                                             </div>

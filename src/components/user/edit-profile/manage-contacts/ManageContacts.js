@@ -9,25 +9,23 @@ class ManageContacts extends Component {
     render() {
         return (
             <div className="privacy-component manage-component">
-                <h2>Zarządzaj kontaktami</h2>
-                <p className="manage-text">Osoby wyszczególnione tutaj to kontakty przesłane
-                    przez Ciebie na Instagram. Aby usunąć zsynchronizowane kontakty, dotknij opcji
-                    Usuń wszystkie. Jeżeli usuniesz kontakty z tej strony, zostaną przesłane nowe
-                    kontakty dodane na telefonie. Jeżeli chcesz zatrzymać synchronizowanie, przejdź
-                    do ustawień urządzenia i wyłącz dostęp do kontaktów.</p>
-                <p className="manage-text">Kontakty są widoczne tylko dla Ciebie, ale Instagram
-                    używa przesłanych przez Ciebie informacji o kontaktach w celu proponowania
-                    znajomych Tobie i innym osobom, a także zwiększenia wygody korzystania z
-                    serwisu.</p>
+                <h2>Quản lý danh bạ</h2>
+                <p className="manage-text">Đây là danh sách những người liên hệ mà bạn đã tải lên Instagram. 
+                Để xóa người liên hệ đã đồng bộ, hãy nhấn vào Xóa tất cả. Người liên hệ sẽ tải lại lên vào lần
+                tiếp theo Instagram đồng bộ danh bạ của bạn. Nếu không muốn như vậy, bạn có thể đi đến phần cài 
+                đặt thiết bị và tắt quyền truy cập vào danh bạ.</p>
+                <p className="manage-text">Chỉ mình bạn xem được người liên hệ của mình nhưng Instagram 
+                sử dụng thông tin bạn đã tải lên liên quan đến người liên hệ của bạn để đưa ra gợi ý kết 
+                bạn cho bạn và những người khác và để cải thiện trải nghiệm cho tất cả mọi người.</p>
                 <div className="contacts-synchronized">
-                    <span className="bold">0 zsynchronizowanych kontaktów
+                    <span className="bold">0 người liên hệ đã đồng bộ
                     </span>
-                    <span className="delete-all-contacts">Usuń wszystkie</span>
+                    <span className="delete-all-contacts">Xoá tất cả</span>
                 </div>
                 <div className="contacts-synchronized">
-                    Kiedy prześlesz swoje kontakty do Instagramu, będą widoczne tutaj.
+                Khi bạn tải danh bạ của mình lên Instagram, họ sẽ hiển thị ở đây.
                 </div>
-                <button disabled className="btn btn-primary edit-profil-button" type="submit">Usuń wszystkie</button>
+                <button disabled className="btn btn-primary edit-profil-button" type="submit">Xoá tất cả</button>
             </div>
         )
     }

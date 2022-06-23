@@ -51,7 +51,7 @@ class CommentPhoto extends Component {
                     onKeyPress={this.handleKeyPress}
                     className="form-control add-comment"
                     type="text"
-                    placeholder="Dodaj komentarz..."/>
+                    placeholder="Thêm bình luận..."/>
             </div>
         )
     }

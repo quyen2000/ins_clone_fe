@@ -20,12 +20,12 @@ class EditProfile extends Component {
                         <Tabs>
                             <div className="col-3">
                                 <TabList className="edit-profile-menu">
-                                    <Tab >Edytuj profil</Tab>
-                                    <Tab>Zmien haslo</Tab>
-                                    <Tab>Autoryzowane aplikacje</Tab>
-                                    <Tab>Wiadomosci e-mail i SMS</Tab>
-                                    <Tab>Zarzadzaj kontaktami</Tab>
-                                    <Tab>Prywatnosc i bezpieczenstwo</Tab>
+                                    <Tab >Chỉnh sửa trang cá nhân</Tab>
+                                    <Tab>Đổi mật khẩu</Tab>
+                                    <Tab>Ứng dụng và trang web</Tab>
+                                    <Tab>Email thông báo</Tab>
+                                    <Tab>Quản lý danh bạ</Tab>
+                                    <Tab>Quyền riêng tư và bảo mật</Tab>
                                 </TabList>
                             </div>
                             <div className="col-9">

@@ -34,7 +34,7 @@ class PrivacySettings extends Component {
     render() {
         return (
             <div className="privacy-component">
-                <h2>Ustawienia prywatności konta</h2>
+                <h2>Quyền riêng tư và bảo mật</h2>
                 <div class="form-check">
                     <input
                         data-toggle="modal"
@@ -48,12 +48,12 @@ class PrivacySettings extends Component {
                         onClick={this.onChange}
                         id="isPrivateCheck"/>
                     <label class="form-check-label" for="isPrivateCheck">
-                        Konto prywatne
+                        Tài khoản riêng tư
                     </label>
                 </div>
-                <p className="privacy-text">Kiedy konto jest prywatne, Twoje zdjęcia i filmy na
-                    Instagramie mogą oglądać tylko zatwierdzeni przez Ciebie użytkownicy. Nie ma to
-                    wpływu na dotychczas obserwujące Cię osoby.</p>
+                <p className="privacy-text">Khi tài khoản của bạn ở chế độ riêng tư, chỉ những người 
+                mà bạn phê duyệt mới được xem ảnh và video của bạn trên Instagram. Những người đang 
+                theo dõi bạn sẽ không bị ảnh hưởng</p>
                 <PrivateAccountModal profilePrivate={this.profileUnPrivate}/>
             </div>
         )

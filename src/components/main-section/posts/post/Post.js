@@ -156,7 +156,7 @@ class Post extends Component {
 
                 </div>
                 <div className="likes">
-                    Liczba polubień:
+                    Số lượt thích:
                     <Link
                         to={{
                         pathname: `/${post.id}/liked_by/`,

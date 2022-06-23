@@ -105,11 +105,11 @@ export const updateUserData = profileUpdateRequest => (dispatch) => {
         .put("http://localhost:5000/api/users/profile/edit", body, config)
         .then(updateResponse => {
             dispatch({type: UPDATE_USER, payload: updateResponse.data})
-            toast.success("Uzytkownik poprawnie edytowany.", {position: toast.POSITION.TOP_RIGHT});
+            toast.success("Chỉnh sửa thành công", {position: toast.POSITION.TOP_RIGHT});
         })
         .catch(err => {
             dispatch(returnErrors(err.response.data, err.response.status));
-            toast.error("Wystapil blad podczas edycji uzytkownika.", {position: toast.POSITION.TOP_RIGHT});
+            toast.error("Đã xảy ra lỗi khi chỉnh sửa người dùng.", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: UPDATE_USER_FAIL});
         })
 
@@ -129,12 +129,12 @@ export const updateUserProfilePicture = picture => (dispatch, getState) => {
     axios
         .post('http://localhost:5000/api/users/profile/photo', bodyFormData, config)
         .then(updatePhotoResponse => {
-            toast.success("Zdjecie profilowe uzytkownika zmienione poprawnie.", {position: toast.POSITION.TOP_RIGHT});
+            toast.success("Thay đổi ảnh thành công.", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: UPDATE_USER_PHOTO, payload: updatePhotoResponse.data})
         })
         .catch(err => {
             dispatch(returnErrors(err.response.data, err.response.status));
-            toast.error("Wystapil blad podczas edycji zdjecia profilowego uzytkownika.", {position: toast.POSITION.TOP_RIGHT});
+            toast.error("Đã xảy ra lỗi khi chỉnh sửa ảnh hồ sơ của người dùng.", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: UPDATE_USER_FAIL});
         })
 }
@@ -150,12 +150,12 @@ export const deleteUserProfilePicture = () => dispatch => {
     axios
         .delete('http://localhost:5000/api/users/profile/photo', config)
         .then(deletePhotoResponse => {
-            toast.success("Zdjecie profilowe uzytkownika zostalo poprawnie usuniete.", {position: toast.POSITION.TOP_RIGHT});
+            toast.success("Xóa ảnh thành công.", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: DELETE_USER_PHOTO, payload: deletePhotoResponse.data})
         })
         .catch(err => {
             dispatch(returnErrors(err.response.data, err.response.status));
-            toast.error("Wystapil blad podczas usuwania zdjecia profilowego uzytkownika.", {position: toast.POSITION.TOP_RIGHT});
+            toast.error("Đã xảy ra lỗi khi xóa ảnh hồ sơ của người dùng.", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: UPDATE_USER_FAIL});
         })
 }
