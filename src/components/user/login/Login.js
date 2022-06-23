@@ -77,7 +77,7 @@ class Login extends Component {
                                     : ''}
                             </div>
                             <div className="login-box sign-up-box">
-                                Bạn chưa có tài khoản ư ?
+                                Bạn chưa có tài khoản ư?
                                 <Link className="register-sign" to="/register">Đăng ký</Link>
                             </div>
                         </div>
