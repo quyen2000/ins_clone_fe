@@ -6,19 +6,19 @@ export default class SmallFooter extends Component {
         return (
             <div className="d-lg-none small-footer">
                     <ul className="small-footer-list">
-                        <li>Informacje</li>
-                        <li>Wsparcie</li>
-                        <li>Prasa</li>
+                        <li>Meta</li>
+                        <li>Giới thiệu</li>
+                        <li>Blog</li>
                         <li>API</li>
-                        <li>Praca</li> <br />
-                        <li>Prywatność</li>
-                        <li>Regulamin</li>
-                        <li>Katalog</li>
+                        <li>Việc làm</li> <br />
+                        <li>Quyền riêng tư</li>
+                        <li>Điều khoản</li>
+                        <li>Mục lục</li>
                         <li>Profile</li> <br />
-                        <li>Hasztagi</li>
-                        <li>Język</li>
+                        <li>Hashtag</li>
+                        <li>Vị trí</li>
                     </ul>
-                    <p className="copyright-small">© 2019 INSTAGRAM</p>
+                    <p className="copyright-small">© 2022 INSTAGRAM</p>
             </div>
         )
     }

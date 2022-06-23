@@ -98,8 +98,8 @@ class ProfilePhotos extends Component {
             return (
                 <div className="container">
                     <div className="private-profile">
-                        <p className="private-title">To konto jest prywatne</p>
-                        <p className="private-body">Obserwuj, aby wyswietlic zdjecia i filmy.</p>
+                        <p className="private-title">Tài khoản này ở chế độ riêng tư</p>
+                        <p className="private-body">Theo dõi, để xem ảnh và video</p>
                     </div>
                 </div>
             )
@@ -143,7 +143,7 @@ class ProfilePhotos extends Component {
             } else {
                 return (
                     <div className="no-posts">
-                        Uzytkownikow nie dodal jeszcze zadnego posta.
+                       Chưa có bài viết
                     </div>
                 )
             }

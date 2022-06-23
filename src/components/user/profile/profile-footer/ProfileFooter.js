@@ -6,19 +6,19 @@ export default class ProfileFooter extends Component {
     return (
       <div className="profile-footer container d-none d-lg-block">
         <ul className="profile-footer-list">
-          <li>Informacje</li>
-          <li>Wsparcie</li>
-          <li>Prasa</li>
+          <li>Meta</li>
+          <li>Giới thiệu</li>
+          <li>Blog</li>
           <li>API</li>
-          <li>Praca</li>
-          <li>Prywatność</li>
-          <li>Regulamin</li>
-          <li>Katalog</li>
+          <li>Việc làm</li>
+          <li>Quyền riêng tư</li>
+          <li>Điều khoản</li>
+          <li>Mục lục</li>
           <li>Profile</li>
-          <li>Hasztagi</li>
-          <li>Język</li>
+          <li>Hashtag</li>
+          <li>Vị trí</li>
         </ul>
-        <p className="profile-footer-copy">© 2019 INSTAGRAM</p>
+        <p className="profile-footer-copy">© 2022 INSTAGRAM</p>
       </div>
     )
   }

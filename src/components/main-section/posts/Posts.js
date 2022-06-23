@@ -59,7 +59,7 @@ class Posts extends Component {
         if (this.props.posts.length === 0) {
                 return (
                     <div className="no-following">
-                        Nikt z osob ktore obserwujesz, nie dodal jeszcze <span className="bold">zadnego posta</span> lub <span className="bold">nikogo nie obserwujesz.</span> 
+                        Người mà bạn đang theo dõi đã <span className="bold">không thêm bất kỳ bài đăng nào</span> hoặc <span className="bold">bạn không theo dõi ai cả.</span> 
                     </div>
                 )
             } else {

@@ -31,7 +31,7 @@ class ProfileFollowersModal extends Component {
                 <div className="modal-dialog liked-by-modal" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title">Obserwujacy</h5>
+                            <h5 className="modal-title">Người theo dõi</h5>
                             <button className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -39,7 +39,7 @@ class ProfileFollowersModal extends Component {
                         <div className="modal-body">
                             {this.props.followers.length > 0
                                 ? <div>{followersItems}</div>
-                                : <span className="no-likes">Nikt jescze nie obserwuje tego uzytkownika.</span>}
+                                : <span className="no-likes">Chưa có ai theo dõi người dùng này.</span>}
                         </div>
                     </div>
                 </div>

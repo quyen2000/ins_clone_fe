@@ -31,57 +31,57 @@ class SideMenu extends Component {
 
                             <div className="side-box relations">
                                 <div className="box-header">
-                                    <span className="box-title">Relacje</span>
-                                    <span className="box-header-action">Zobacz wszystkie</span>
+                                    <span className="box-title">Tin</span>
+                                    <span className="box-header-action">Xem tất cả</span>
                                 </div>
                                 <div className="box-content">
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                     <div className="profile-short">
                                         <p className="button" href="#"><img src={this.props.user.imagePath} alt="profile"/></p>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">11 minut temu</p>
+                                            <p className="profile-name">11 phút trước</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,55 +89,55 @@ class SideMenu extends Component {
 
                             <div className="side-box propositions">
                                 <div className="box-header">
-                                    <span className="box-title">Propozycje dla Ciebie</span>
-                                    <span className="box-header-action">Zobacz wszystkich</span>
+                                    <span className="box-title">Gợi ý cho bạn</span>
+                                    <span className="box-header-action">xem tất cả</span>
                                 </div>
                                 <div className="box-content">
                                     <div className="profile-short">
                                         <img className="profile-image" src={this.props.user.imagePath} alt="profile"/>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">Nowy uzytkownik Ins...</p>
+                                            <p className="profile-name">Thành viên mới...</p>
                                         </div>
-                                        <span className="observe">Obserwuj</span>
+                                        <span className="observe">Đăng ký</span>
                                     </div>
                                     <div className="profile-short">
                                         <img className="profile-image" src={this.props.user.imagePath} alt="profile"/>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">Nowy uzytkownik Ins...</p>
+                                            <p className="profile-name">Thành viên mới...</p>
                                         </div>
-                                        <span className="observe">Obserwuj</span>
+                                        <span className="observe">Đăng ký</span>
                                     </div>
                                     <div className="profile-short">
                                         <img className="profile-image" src={this.props.user.imagePath} alt="profile"/>
                                         <div className="profile-details">
                                             <p className="profile-username">{this.props.user.username}</p>
-                                            <p className="profile-name">Nowy uzytkownik Ins...</p>
+                                            <p className="profile-name">Thành viên mới...</p>
                                         </div>
-                                        <span className="observe">Obserwuj</span>
+                                        <span className="observe">Đăng ký</span>
                                     </div>
                                 </div>
                             </div>
 
                             <footer>
                                 <ul className="footer-list">
-                                    <li>Informacje</li>
-                                    <li>Wsparcie</li>
-                                    <li>Prasa</li>
+                                    <li>Meta</li>
+                                    <li>Giới thiệu</li>
+                                    <li>Blog</li>
                                     <li>API</li>
-                                    <li>Praca</li>
-                                    <li>Prywatność</li>
-                                    <li>Regulamin</li>
-                                    <li>Katalog</li>
+                                    <li>Việc làm</li>
+                                    <li>Quyền riêng tư</li>
+                                    <li>Điều khoản</li>
+                                    <li>Mục lục</li>
                                     <li>Profile</li>
-                                    <li>Hasztagi</li>
-                                    <li>Język</li>
+                                    <li>Hashtag</li>
+                                    <li>Vị trí</li>
                                 </ul>
-                                <p className="copyright">© 2019 INSTAGRAM</p>
+                                <p className="copyright">© 2022 INSTAGRAM</p>
                             </footer>
 
-                            <button className="form-control" onClick={this.logOut}>Wyloguj sie</button>
+                            <button className="form-control" onClick={this.logOut}>Đăng xuất</button>
                         </div>
                     )}
             </div>

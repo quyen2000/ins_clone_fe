@@ -67,7 +67,7 @@ class ChangePassword extends Component {
 
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group row first-row">
-                        <label htmlFor="oldPassword" className="col-sm-3 col-form-label">Poprzednie haslo</label>
+                        <label htmlFor="oldPassword" className="col-sm-3 col-form-label">Mật khẩu cũ</label>
                         <div className="col-sm-7">
                             <input
                                 type="password"
@@ -80,7 +80,7 @@ class ChangePassword extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="newPassword" className="col-sm-3 col-form-label">Nowe haslo</label>
+                        <label htmlFor="newPassword" className="col-sm-3 col-form-label">Mật khẩu mới</label>
                         <div className="col-sm-7">
                             <input
                                 style={this.state.passwordMatch
@@ -99,7 +99,7 @@ class ChangePassword extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="newPasswordAgain" className="col-sm-3 col-form-label">Potwierdz nowe haslo</label>
+                        <label htmlFor="newPasswordAgain" className="col-sm-3 col-form-label">Xác nhận mật khẩu mới</label>
                         <div className="col-sm-7">
                             <input
                                 style={this.state.passwordMatch
@@ -122,7 +122,7 @@ class ChangePassword extends Component {
                             <button
                                 type="submit"
                                 disabled={!disabled}
-                                className="btn btn-primary edit-profil-button">Wyslij</button>
+                                className="btn btn-primary edit-profil-button">Đổi mật khẩu</button>
                         </div>
                     </div>
                 </form>

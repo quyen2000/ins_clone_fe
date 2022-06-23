@@ -16,9 +16,9 @@ class PrivateAccountModal extends Component {
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h5 className="modal-title">
-                                    Zmienic ustawienia prywatnosci ?
-                                    <p className="modal-silver">Każdy będzie mógł zobaczyć Twoje zdjęcia i filmy na
-                                        Instagramie. Nie trzeba już zatwierdzać obserwujących.</p>
+                                    Thay đổi cài đặt quyền riêng tư ?
+                                    <p className="modal-silver">Mọi người sẽ có thể xem ảnh và video của bạn trên Instagram. 
+                                    Bạn không cần phê duyệt người theo dõi nữa.</p>
                                 </h5>
                             </div>
                             <div className="modal-body">
@@ -30,7 +30,7 @@ class PrivateAccountModal extends Component {
                                         aria-label="Close">
                                         Ok
                                     </li>
-                                    <li data-dismiss="modal" aria-label="Close">Anuluj</li>
+                                    <li data-dismiss="modal" aria-label="Close">Huỷ</li>
                                 </ul>
                             </div>
                         </div>

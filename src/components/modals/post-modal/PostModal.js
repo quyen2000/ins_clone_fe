@@ -214,7 +214,7 @@ class PostModal extends Component {
                                                 onClick={() => this.onSaveClick(postModal.postResponse.id)}
                                                 className="far fa-bookmark"></i>}
 
-                                    </div> < div className = "likes" > Liczba polubień : 
+                                    </div> < div className = "likes" > Số lượt thích: 
                                         <span data-toggle="modal"
                         data-target="#profileLikedByModal" className="likes-bold">
                                             {this.state.likeCount}

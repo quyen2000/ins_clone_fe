@@ -23,7 +23,7 @@ class ProfileBookmarks extends Component {
                         this.setState({activeComponent: 0})
                     }}>
                         <i className="fas fa-th"></i>
-                        Posty</li>
+                        Bài viết</li>
                     {this.props.userId === this.props.user.id
                         ? <li
                                 className={this.state.activeComponent === 2
@@ -36,14 +36,14 @@ class ProfileBookmarks extends Component {
                                 this.setState({activeComponent: 2})
                             }}>
                                 <i className="far fa-bookmark"></i>
-                                Zapisane</li>
+                                Đã lưu</li>
                         : ''}
                     <li
                         className={this.state.activeComponent === 3
                         ? 'bookmark-active'
                         : ''}>
                         <i className="fas fa-thumbtack"></i>
-                        Z oznaczeniem</li>
+                        Được gắn thẻ</li>
                 </ul>
             </div>
         )

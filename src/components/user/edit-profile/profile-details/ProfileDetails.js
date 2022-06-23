@@ -177,20 +177,20 @@ class ProfileDetails extends Component {
                             <p
                                 data-toggle="modal"
                                 data-target="#changeProfilePhotoModal"
-                                className="profile-name change-name">Zmien zdjecie profilowe</p>
+                                className="profile-name change-name">Thay đổi ảnh đại diện</p>
                         </div>
                     </div>
                 </div>
 
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group row first-row">
-                        <label htmlFor="name" className="col-sm-3 col-form-label">Imie i nazwisko</label>
+                        <label htmlFor="name" className="col-sm-3 col-form-label">Tên</label>
                         <div className="col-sm-7">
                             {this.state.nameOk
                                 ? ''
-                                : <span className="wrong-register">Imie i nazwisko musi miec {NAME_MIN_LENGTH}
-                                    do {NAME_MAX_LENGTH}
-                                    znakow.</span>}
+                                : <span className="wrong-register">Tên người dùng phải từ {NAME_MIN_LENGTH}
+                                    đến {NAME_MAX_LENGTH}
+                                    ký tự.</span>}
                             <input
                                 style={this.state.nameOk
                                 ? null
@@ -208,11 +208,11 @@ class ProfileDetails extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="username" className="col-sm-3 col-form-label">Nazwa uzytkownika</label>
+                        <label htmlFor="username" className="col-sm-3 col-form-label">Tên người dùng</label>
                         <div className="col-sm-7">
                             {this.state.usernameAvaible
                                 ? ''
-                                : <span className="wrong-register">Nazwa uzytkownika zajeta.</span>}
+                                : <span className="wrong-register">Tên này đã được sử dụng.</span>}
                             <input
                                 type="text"
                                 style={this.state.usernameAvaible
@@ -230,7 +230,7 @@ class ProfileDetails extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="url" className="col-sm-3 col-form-label">Witryna internetowa</label>
+                        <label htmlFor="url" className="col-sm-3 col-form-label">Trang web</label>
                         <div className="col-sm-7">
                             <input
                                 type="text"
@@ -243,7 +243,7 @@ class ProfileDetails extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="bio" className="col-sm-3 col-form-label">Biogram</label>
+                        <label htmlFor="bio" className="col-sm-3 col-form-label">Tiểu sử</label>
                         <div className="col-sm-7">
                             <textarea
                                 type="text"
@@ -259,16 +259,16 @@ class ProfileDetails extends Component {
                     <div className="form-group row">
                         <label htmlFor="bio" className="col-sm-3 col-form-label"></label>
                         <div className="col-sm-7 private-info-box">
-                            <span className="private-info">Informacje prywatne</span>
+                            <span className="private-info">Thông tin cá nhân</span>
                         </div>
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="email" className="col-sm-3 col-form-label">Adres e-mail</label>
+                        <label htmlFor="email" className="col-sm-3 col-form-label">Email</label>
                         <div className="col-sm-7">
                             {this.state.emailAvaible
                                 ? ''
-                                : <span className="wrong-register">Email zajety.</span>}
+                                : <span className="wrong-register">Email đã được sử dụng.</span>}
                             <input
                                 type="text"
                                 name="email"
@@ -286,11 +286,11 @@ class ProfileDetails extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="phone" className="col-sm-3 col-form-label">Numer telefonu</label>
+                        <label htmlFor="phone" className="col-sm-3 col-form-label">Số điện thoại</label>
                         <div className="col-sm-7">
                             {this.state.phoneOk
                                 ? ''
-                                : <span className="wrong-register">Podaj prawidlowy numer telefonu.</span>}
+                                : <span className="wrong-register">Vui lòng nhập số hợp lệ</span>}
                             <input
                                 style={this.state.phoneOk
                                 ? null
@@ -308,7 +308,7 @@ class ProfileDetails extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label htmlFor="sex" className="col-sm-3 col-form-label">Plec</label>
+                        <label htmlFor="sex" className="col-sm-3 col-form-label">Giới tính</label>
                         <div className="col-sm-7">
                             <select
                                 name="sex"
@@ -316,9 +316,9 @@ class ProfileDetails extends Component {
                                 id="sex"
                                 onChange={this.onChange}
                                 value={this.state.sex}>
-                                <option>Mezczyzna</option>
-                                <option>Kobieta</option>
-                                <option>Nieokreslone</option>
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                                <option>Tuỳ chỉnh</option>
                             </select>
                         </div>
                     </div>
@@ -329,7 +329,7 @@ class ProfileDetails extends Component {
                             <button
                                 type="submit"
                                 disabled={!this.state.sendable}
-                                className="btn btn-primary edit-profil-button">Wyslij</button>
+                                className="btn btn-primary edit-profil-button">Gửi</button>
                         </div>
                     </div>
                 </form>

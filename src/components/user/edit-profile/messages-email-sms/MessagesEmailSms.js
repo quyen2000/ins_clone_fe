@@ -9,7 +9,7 @@ export default class MessagesEmailSms extends Component {
     render() {
         return (
             <div className="privacy-component messages-email-sms">
-                <h2>Subskrybuj:</h2>
+                <h2>Đăng ký:</h2>
                 <div className="choice-box">
                     <div class="form-check">
                         <input
@@ -19,10 +19,10 @@ export default class MessagesEmailSms extends Component {
                             onClick={this.onChange}
                             id="isPrivateCheck"/>
                         <label class="form-check-label" for="isPrivateCheck">
-                            E-maile z aktualnościami
+                            Email phản hồi
                         </label>
                     </div>
-                    <p className="privacy-text">Poznawaj nowe produkty w pierwszej kolejności.</p>
+                    <p className="privacy-text">Đóng góp ý kiến về Instagram.</p>
                 </div>
 
                 <div className="choice-box">
@@ -34,10 +34,10 @@ export default class MessagesEmailSms extends Component {
                             onClick={this.onChange}
                             id="isPrivateCheck"/>
                         <label class="form-check-label" for="isPrivateCheck">
-                            E-maile z przypomnieniami
+                            Email lời nhắc
                         </label>
                     </div>
-                    <p className="privacy-text">Nie przegap ciekawych informacji.</p>
+                    <p className="privacy-text">Nhận thông báo mà bạn có thể đã bỏ lỡ.</p>
                 </div>
 
                 <div className="choice-box">
@@ -49,10 +49,10 @@ export default class MessagesEmailSms extends Component {
                             onClick={this.onChange}
                             id="isPrivateCheck"/>
                         <label class="form-check-label" for="isPrivateCheck">
-                            E-maile o produktach
+                            Email về sản phẩm
                         </label>
                     </div>
-                    <p className="privacy-text">Korzystaj ze wskazówek na temat narzędzi Instagramu.</p>
+                    <p className="privacy-text">Xem mẹo về công cụ của Instagram.</p>
                 </div>
 
                 <div className="choice-box">
@@ -64,10 +64,10 @@ export default class MessagesEmailSms extends Component {
                             onClick={this.onChange}
                             id="isPrivateCheck"/>
                         <label class="form-check-label" for="isPrivateCheck">
-                            E-maile o badaniach
+                            E-maile tin tức
                         </label>
                     </div>
-                    <p className="privacy-text">Przekazuj opinie i bierz udział w badaniach naukowych.</p>
+                    <p className="privacy-text">Tìm hiểu về các tính năng mới của Instagram.</p>
                 </div>
 
                 <div className="choice-box">
@@ -79,10 +79,10 @@ export default class MessagesEmailSms extends Component {
                             onClick={this.onChange}
                             id="isPrivateCheck"/>
                         <label class="form-check-label" for="isPrivateCheck">
-                            Wiadomości SMS
+                            Tin nhắn SMS
                         </label>
                     </div>
-                    <p className="privacy-text">Otrzymuj przypomnienia w wiadomościach SMS.</p>
+                    <p className="privacy-text">Nhận lời nhắc qua SMS</p>
                 </div>
             </div>
         )

@@ -82,7 +82,7 @@ class Search extends Component {
                         value={this.state.searchText}
                         onChange={this.onChange}
                         name="searchText"
-                        placeholder="Szukaj"/> {this.state.searchText.length > 0 && this.state.foundUsers.length > 0 && this.state.showSearch
+                        placeholder="Tìm kiếm"/> {this.state.searchText.length > 0 && this.state.foundUsers.length > 0 && this.state.showSearch
                         ? <ul id="scrollable" className="search-results">
                                 {foundUsersItems}
                             </ul>

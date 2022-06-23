@@ -14,7 +14,7 @@ class EditProfileChangePhotoModal extends Component {
                 <div className="modal-dialog liked-by-modal" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title">Zmien zdjecie profilowe</h5>
+                            <h5 className="modal-title">Thay đổi ảnh của bạn</h5>
                         </div>
                         <div className="modal-body">
                             <ul className="change-profile-photo-menu">
@@ -25,11 +25,11 @@ class EditProfileChangePhotoModal extends Component {
                                             name="photo"
                                             id="photo"
                                             onChange={this.props.imageChange}/>
-                                        Dodaj zdjecie
+                                        Tải ảnh lên
                                     </label>
                                 </li>
-                                <li onClick={this.props.removePhoto} className="delete-photo">Usun biezace zdjecie</li>
-                                <li data-dismiss="modal" aria-label="Close">Anuluj</li>
+                                <li onClick={this.props.removePhoto} className="delete-photo">Gỡ ảnh hiện tại</li>
+                                <li data-dismiss="modal" aria-label="Close">Huỷ</li>
                             </ul>
                         </div>
                     </div>
