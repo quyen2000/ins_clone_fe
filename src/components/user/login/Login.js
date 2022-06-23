@@ -69,16 +69,16 @@ class Login extends Component {
                                             placeholder="Haslo..."/></div>
                                     <button type="submit" className="btn btn-block mybtn btn-primary login-button">Login</button>
                                 </form>
-                                <span className="login-divider center">lub</span>
-                                <Link className="login-link fb" to="/">Zaloguj się z Facebookiem</Link>
-                                <Link className="login-link" to="/">Zapomniales hasla?</Link>
+                                <span className="login-divider center">hoặc</span>
+                                <Link className="login-link fb" to="/">Đăng nhập bằng Facebook</Link>
+                                <Link className="login-link" to="/">Quên mật khẩu?</Link>
                                 {this.props.isLoading === true
                                     ? 'loguje'
                                     : ''}
                             </div>
                             <div className="login-box sign-up-box">
-                                Nie masz konta ?
-                                <Link className="register-sign" to="/register">Zarejestruj sie</Link>
+                                Bạn chưa có tài khoản ư ?
+                                <Link className="register-sign" to="/register">Đăng ký</Link>
                             </div>
                         </div>
                     </div>
