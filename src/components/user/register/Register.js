@@ -21,7 +21,7 @@ class Register extends Component {
             usernameAvaible: true,
             emailAvaible: true,
             passwordOk: true,
-            imageName: 'Zdjecie profilowe',
+            imageName: 'Ảnh đại diện',
             nameOk: true
         }
     }
@@ -122,9 +122,9 @@ class Register extends Component {
                                 <form onSubmit={this.onSubmit}>
                                     {this.state.nameOk
                                         ? ''
-                                        : <span className="wrong-register">Nazwa musi miec od {NAME_MIN_LENGTH}
-                                            do {NAME_MAX_LENGTH}
-                                            znakow.</span>}
+                                        : <span className="wrong-register">Tên phải từ {NAME_MIN_LENGTH}
+                                            đến {NAME_MAX_LENGTH}
+                                            ký tự.</span>}
                                     <div className="form-group">
                                         <input
                                             type="text"
@@ -134,11 +134,11 @@ class Register extends Component {
                                             onChange={this.onChange}
                                             className="form-control login-input"
                                             required
-                                            placeholder="Nazwa"/></div>
+                                            placeholder="Tên"/></div>
 
                                     {this.state.usernameAvaible
                                         ? ''
-                                        : <span className="wrong-register">Nazwa uzytkownika zajeta.</span>}
+                                        : <span className="wrong-register">Tên này đã được sử dụng.</span>}
                                     <div className="form-group">
                                         <input
                                             style={this.state.usernameAvaible
@@ -153,10 +153,10 @@ class Register extends Component {
                                             onChange={this.onChange}
                                             className="form-control login-input"
                                             required
-                                            placeholder="Nazwa uzytkownika"/></div>
+                                            placeholder="Tên tài khoản"/></div>
                                     {this.state.emailAvaible
                                         ? ''
-                                        : <span className="wrong-register">Email zajety.</span>}
+                                        : <span className="wrong-register">Email tồn tại.</span>}
                                     <div className="form-group">
                                         <input
                                             style={this.state.emailAvaible
@@ -174,9 +174,9 @@ class Register extends Component {
                                             placeholder="Email"/></div>
                                     {this.state.passwordOk
                                         ? ''
-                                        : <span className="wrong-register">Haslo musi miec od {PASSWORD_MIN_LENGTH}
-                                            do {PASSWORD_MAX_LENGTH}
-                                            znakow.</span>}
+                                        : <span className="wrong-register">Mật khẩu phải từ {PASSWORD_MIN_LENGTH}
+                                            đến {PASSWORD_MAX_LENGTH}
+                                            ký tự.</span>}
                                     <div className="form-group">
                                         <input
                                             style={this.state.passwordOk
@@ -191,7 +191,7 @@ class Register extends Component {
                                             required
                                             name="password"
                                             className="form-control login-input"
-                                            placeholder="Haslo"/></div>
+                                            placeholder="Mật khẩu"/></div>
 
                                     <div className="input-group custom-file-upload">
                                         <div className="input-group-prepend">
@@ -218,12 +218,12 @@ class Register extends Component {
                                     <button
                                         disabled={!isEnabled}
                                         type="submit"
-                                        className="btn btn-block mybtn btn-primary margin-bottom login-button">Zarejestruj</button>
+                                        className="btn btn-block mybtn btn-primary margin-bottom login-button">Đăng ký</button>
                                 </form>
                             </div>
                             <div className="login-box sign-up-box">
-                                Masz juz konto ?
-                                <Link className="register-sign" to="/login">Zaloguj sie</Link>
+                                Bạn có tài khoản?
+                                <Link className="register-sign" to="/login">Đăng nhập</Link>
                             </div>
                         </div>
                     </div>
