@@ -86,7 +86,7 @@ class ProfileDetails extends Component {
     }
 
     componentDidMount() {
-        document.title = "Edycja profilu · InstagramClone"
+        document.title = "Chỉnh sửa hồ sơ · InstagramClone"
         document
             .getElementsByClassName('react-tabs')[0]
             .classList

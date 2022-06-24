@@ -56,7 +56,7 @@ class Notifications extends Component {
                             alt="profile"/>
                         <div className="profile-details">
                             <p className="profile-username">{observeItem.creator.username}</p>
-                            <p className="profile-name">zaczął/zaczęła Cię obserwować.</p>
+                            <p className="profile-name">bắt đầu theo dõi bạn.</p>
                         </div>
                         <span className="time-ago">
                             <TimeAgo date={observeItem.creationDateTime} formatter={formatter}/>
@@ -78,7 +78,7 @@ class Notifications extends Component {
                         <img className="profile-image" src={likeItem.creator.imagePath} alt="profile"/>
                         <div className="profile-details">
                             <p className="profile-username">{likeItem.creator.username}</p>
-                            <p className="profile-name">lubi twoje zdjęcie.</p>
+                            <p className="profile-name">anh ấy thích ảnh của bạn.</p>
                         </div>
                         <span className="time-ago">
                             <TimeAgo date={likeItem.creationDateTime} formatter={formatter}/>
@@ -101,7 +101,7 @@ class Notifications extends Component {
                             alt="profile"/>
                         <div className="profile-details">
                             <p className="profile-username">{commentItem.creator.username}</p>
-                            <p className="profile-name">skomentowal/skomentowala twoje zdjęcie.</p>
+                            <p className="profile-name">đã nhận xét về ảnh của bạn.</p>
                         </div>
                         <span className="time-ago">
                             <TimeAgo date={commentItem.creationDateTime} formatter={formatter}/>

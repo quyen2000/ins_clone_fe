@@ -15,7 +15,7 @@ class ChangePassword extends Component {
     }
 
     componentDidMount(){
-        document.title = "Zmien hasło · InstagramClone"
+        document.title = "Đổi mật khẩu· InstagramClone"
     }
 
     onChange = (e) => {

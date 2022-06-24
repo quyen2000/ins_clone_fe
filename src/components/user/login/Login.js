@@ -57,7 +57,7 @@ class Login extends Component {
                                             onChange={this.onChange}
                                             className="form-control login-input"
                                             required
-                                            placeholder="Adres email lub nazwa uzytkownika ..."/></div>
+                                            placeholder="Email or Username..."/></div>
                                     <div className="form-group">
                                         <input
                                             value={this.state.password}
@@ -66,14 +66,14 @@ class Login extends Component {
                                             required
                                             name="password"
                                             className="form-control login-input"
-                                            placeholder="Haslo..."/></div>
+                                            placeholder="Password"/></div>
                                     <button type="submit" className="btn btn-block mybtn btn-primary login-button">Login</button>
                                 </form>
                                 <span className="login-divider center">hoặc</span>
                                 <Link className="login-link fb" to="/">Đăng nhập bằng Facebook</Link>
                                 <Link className="login-link" to="/">Quên mật khẩu?</Link>
                                 {this.props.isLoading === true
-                                    ? 'loguje'
+                                    ? 'nhật ký'
                                     : ''}
                             </div>
                             <div className="login-box sign-up-box">

@@ -11,7 +11,7 @@ class PrivacySettings extends Component {
     }
 
     componentDidMount() {
-        document.title = "Prywatność i bezpieczeństwo · InstagramClone"
+        document.title = "Quyền riêng tư và bảo mật · InstagramClone"
         this.setState({isPrivate: this.props.editData.private})
     }
 

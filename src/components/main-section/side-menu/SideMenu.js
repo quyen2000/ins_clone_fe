@@ -16,7 +16,7 @@ class SideMenu extends Component {
         return (
             <div className="sticky-top sticky-offset">
                 {this.props.user === null
-                    ? 'Laduje'
+                    ? 'Đang tải...'
                     : (
                         <div>
                             <div className="profile-short">
