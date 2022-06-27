@@ -41,12 +41,12 @@ export const login = (loginRequest) => dispatch => {
     axios
         .post("http://localhost:5000/api/auth/signin", body, config)
         .then(res => {
-            toast.success("Poprawnie zalogowany!", {position: toast.POSITION.TOP_RIGHT});
+            toast.success("Đăng nhập thành công!", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: LOGIN_SUCCESS, payload: res.data});
         })
         .catch(err => {
             dispatch(returnErrors(err.response.data, err.response.status));
-            toast.error("Zle dane logowania!", {position: toast.POSITION.TOP_RIGHT});
+            toast.error("Đăng nhập thất bại!", {position: toast.POSITION.TOP_RIGHT});
             dispatch({type: LOGIN_FAIL});
         });
 }
@@ -112,14 +112,14 @@ export const changePassword = (changePasswordRequest) => dispatch => {
         .then(res => res.json())
         .then(changePasswordResponse =>{ 
             if(changePasswordResponse.success){
-                toast.success("Poprawnie zmienione haslo.", {position: toast.POSITION.TOP_RIGHT});
+                toast.success("Đổi mật khẩu thành công.", {position: toast.POSITION.TOP_RIGHT});
             } else{
-                toast.error("Zle dane podczas zmiany hasla.", {position: toast.POSITION.TOP_RIGHT});
+                toast.error("Dữ liệu sai khi thay đổi mật khẩu.", {position: toast.POSITION.TOP_RIGHT});
             }
             dispatch({type: PASSWORD_CHANGE_SUCCESS, payload: changePasswordResponse.data})
         })
         .catch(err => {
-            toast.error("Blad podczas zmiany hasla.", {position: toast.POSITION.TOP_RIGHT});
+            toast.error("Lỗi khi thay đổi mật khẩu.", {position: toast.POSITION.TOP_RIGHT});
         })
 }
 
