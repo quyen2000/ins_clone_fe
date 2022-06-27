@@ -86,7 +86,7 @@ class Comments extends Component {
             <div className={'comments' + (this.props.isModal ? ' modal-comments' : '')}>
                 {this.state.comments.length > howManyComments && !this.state.loadMore && !this.props.isModal
                     ?   <div>
-                            <span onClick={this.loadMoreComments} className="more-comments">Zobacz wszystkie komentarze ({this.state.comments.length})</span>
+                            <span onClick={this.loadMoreComments} className="more-comments">Xem tất cả các bình luận({this.state.comments.length})</span>
                             {commentItemsSliced}
                         </div>
 

@@ -56,7 +56,7 @@ class LikedBy extends Component {
                 <div className="modal-dialog liked-by-modal" ref={node => this.node = node}>
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title">Polubienia</h5>
+                            <h5 className="modal-title">Thích</h5>
 
                             {this.props.isModal && (
                                 <button className="close" onClick={this.props.onClose || this.onClose}>
@@ -68,7 +68,7 @@ class LikedBy extends Component {
                         <div className="modal-body">
                             {this.props.postLikes.length > 0
                                 ? <div>{likeItems}</div>
-                                : <span className="no-likes">Nikt jescze nie polubil tego posta.</span>}
+                                : <span className="no-likes">Không ai khác thích bài đăng này.</span>}
                         </div>
                     </div>
                 </div>

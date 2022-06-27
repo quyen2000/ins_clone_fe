@@ -31,7 +31,7 @@ class Profile extends Component {
     componentWillMount() {
         const {username} = this.props.match.params
         if (this.props.userProfile !== null) 
-            document.title = `${this.props.userProfile.userSummary.name} (@${username}) · Zdjecia i filmy na InstagramClone`
+            document.title = `${this.props.userProfile.userSummary.name} (@${username}) · Hình ảnh và video trên InstagramClone`
         if (this.props.isModal) 
             document.body.style.overflow = "hidden"
         else {

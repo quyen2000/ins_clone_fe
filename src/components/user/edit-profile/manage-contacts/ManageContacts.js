@@ -3,7 +3,7 @@ import './ManageContacts.css'
 
 class ManageContacts extends Component {
     componentDidMount() {
-        document.title = "Zarządzaj kontaktami · InstagramClone"
+        document.title = "Quản lý danh bạ · InstagramClone"
     }
     
     render() {

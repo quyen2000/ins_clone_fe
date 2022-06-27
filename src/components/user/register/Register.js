@@ -212,7 +212,7 @@ class Register extends Component {
                                                                 .slice(0, 15)}...</span>
                                                     )
                                                     : <span>{this.state.imageName}</span>
-}</label>
+                                            }</label>
                                         </div>
                                     </div>
                                     <button

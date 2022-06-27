@@ -59,8 +59,8 @@ class ProfileFollowingItem extends Component {
                                 ? ' already'
                                 : '')}>
                                 {this.state.isObserved
-                                    ? 'Obserwowanie'
-                                    : 'Obserwuj'}
+                                    ? 'Theo dõi'
+                                    : 'Xem'}
                             </span>
 }
                     </div>

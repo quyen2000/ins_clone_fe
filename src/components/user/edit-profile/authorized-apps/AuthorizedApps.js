@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 class AuthorizedApps extends Component {
     componentDidMount() {
-        document.title = "Autoryzowane aplikacje · InstagramClone"
+        document.title = "Các ứng dụng ủy quyền · InstagramClone"
     }
 
     render() {
