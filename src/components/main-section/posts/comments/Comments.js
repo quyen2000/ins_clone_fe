@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import './Comments.css'
 import CommentPhoto from '../comment-photo/CommentPhoto'
 import TimeAgo from 'react-timeago'
-import polishStrings from 'react-timeago/lib/language-strings/pl'
+import polishStrings from 'react-timeago/lib/language-strings/vi'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
 
 const formatter = buildFormatter(polishStrings)
