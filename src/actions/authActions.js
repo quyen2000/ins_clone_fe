@@ -112,9 +112,9 @@ export const changePassword = (changePasswordRequest) => dispatch => {
         .then(res => res.json())
         .then(changePasswordResponse =>{ 
             if(changePasswordResponse.success){
-                toast.success("Đổi mật khẩu thành công.", {position: toast.POSITION.TOP_RIGHT});
+                toast.success("Đổi mật khẩu thành công!", {position: toast.POSITION.TOP_RIGHT});
             } else{
-                toast.error("Dữ liệu sai khi thay đổi mật khẩu.", {position: toast.POSITION.TOP_RIGHT});
+                toast.error("Dữ liệu sai khi thay đổi mật khẩu!", {position: toast.POSITION.TOP_RIGHT});
             }
             dispatch({type: PASSWORD_CHANGE_SUCCESS, payload: changePasswordResponse.data})
         })

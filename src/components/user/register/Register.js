@@ -27,7 +27,7 @@ class Register extends Component {
     }
 
     notify = () => {
-        toast.success("Poprawnie zarejestrowany !", {position: toast.POSITION.TOP_RIGHT});
+        toast.success("Đăng ký thành công !", {position: toast.POSITION.TOP_RIGHT});
     }
 
     componentWillReceiveProps(nextProps) {
@@ -222,7 +222,7 @@ class Register extends Component {
                                 </form>
                             </div>
                             <div className="login-box sign-up-box">
-                                Bạn có tài khoản?
+                                Bạn đã có tài khoản?
                                 <Link className="register-sign" to="/login">Đăng nhập</Link>
                             </div>
                         </div>
