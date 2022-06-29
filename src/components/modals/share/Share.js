@@ -39,7 +39,7 @@ class Share extends Component {
                                     <span className="share-method-name">Sao chép đường dẫn</span>
                                 </li>
                                 <li>
-                                    <span className="share-cancel">Hủy bỏ</span>
+                                    <button type="button" className='btn btn-secondary' data-dismiss="modal" style={{"margin-left":" 150px"}}>Hủy bỏ</button>
                                 </li>
                             </ul>
                         </div>
