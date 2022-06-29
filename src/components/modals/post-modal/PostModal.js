@@ -171,7 +171,7 @@ class PostModal extends Component {
                     <div className="modal-content">
                         <div className="modal-body">
                             {!postModal
-                                ? 'Laduje'
+                                ? 'Đang tải...'
                                 : ( < div className = "row" > <div className="col-8">
                                     <div className="image-box">
                                     <img src={postModal.postResponse.imagePath} onDoubleClick={() => this.photoDoubleClick(postModal.postResponse.id)} alt=""/>

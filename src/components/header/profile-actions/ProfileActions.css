@@ -5,9 +5,16 @@
     font-weight: 100 !important;
 }
 
+
 i {
     color: #262626 !important;
     font-size: 21px;
+}
+
+.actions-post i{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
 }
 
 .notifications-dropdown {
@@ -136,4 +143,29 @@ i {
 
 .fa-user:active{
     color: #999 !important;
+}
+
+.imageupload {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.imageupload_progress {
+    width: 100%;
+  }
+  
+.imageupload_button {
+    margin: 10px;
+    height: 30px;
+  }
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.modal-open{
+
 }
